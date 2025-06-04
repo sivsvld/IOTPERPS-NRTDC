@@ -272,6 +272,7 @@ def main():
                         export_db(filename, header, rows)
                     elif (action == "6" and role == "Admin"):
                         save_db(filename, header, rows)
+                        break
                     elif (action == "2" and role != "Admin"):
                         break
                     else:
