@@ -270,8 +270,9 @@ def main():
                         delete_record(filename, header, rows)
                     elif action == "5" and role == "Admin":
                         export_db(filename, header, rows)
-                    elif (action == "6" and role == "Admin") or (action == "2" and role != "Admin"):
+                    elif (action == "6" and role == "Admin"):
                         save_db(filename, header, rows)
+                    elif (action == "2" and role != "Admin"):
                         break
                     else:
                         print("❌ Invalid option.")
